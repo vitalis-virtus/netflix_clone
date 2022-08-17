@@ -50,7 +50,6 @@ function Row({ title, fetchUrl, isLargeRow }) {
 
       <div className="row__posters">
         {movies.map((movie) => {
-          console.log(movie);
           return movie.backdrop_path ? (
             <img
               key={movie.id}
@@ -67,6 +66,7 @@ function Row({ title, fetchUrl, isLargeRow }) {
             />
           ) : (
             <div
+              key={movie.id}
               className="row__poster"
               onClick={() => {
                 handleImageClick(movie);
