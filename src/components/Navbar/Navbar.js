@@ -6,7 +6,6 @@ function Navbar() {
   const [show, setShow] = useState(false);
 
   const handleScroll = useCallback(() => {
-    console.log("dfsd");
     if (window.scrollY > 100) {
       setShow(true);
     } else {
